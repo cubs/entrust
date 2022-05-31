@@ -1,6 +1,6 @@
-# ENTRUST (Laravel 6 Package)
+# ENTRUST (Laravel Package)
 
-Entrust is a succinct and flexible way to add Role-based Permissions to **Laravel 6**.
+Entrust is a succinct and flexible way to add Role-based Permissions to **Laravel**.
 
 ## Contents
 
@@ -27,10 +27,19 @@ Entrust is a succinct and flexible way to add Role-based Permissions to **Larave
 
 ## Installation
 
-1) In order to install Laravel 6 Entrust, just add the following to your composer.json. Then run `composer update`:
+1) In order to install Laravel Entrust, just add the following to your composer.json. Then run `composer update`:
 
+Under `require`:
 ```json
-"cubs/entrust": "^2.0"
+"zizaco/entrust": "dev-feature/support_newer_laravel_versions"
+```
+
+Under `repositories`:
+```json
+"entrust": {
+  "type": "vcs",
+  "url": "https://github.com/cubs/entrust"
+},
 ```
 
 2) Open your `config/app.php` and add the following to the `providers` array:
